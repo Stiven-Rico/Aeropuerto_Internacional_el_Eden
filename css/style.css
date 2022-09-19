@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'icomoon';
+  font-family: 'roboto';
   src: url("../roboto/*");
   src: url("../Fonts/roboto/*") format("embedded-opentype"), url("../Fonts/roboto/*") format("truetype"), url("../Fonts/roboto/*") format("woff"), url("../Fonts/roboto/*") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 body {
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "roboto";
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -59,7 +59,7 @@ p {
 
 h1, h2, h3, h4, h5, h6, figure {
   color: #010101;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "roboto";
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -1260,7 +1260,7 @@ form label {
 .btn {
   margin-right: 4px;
   margin-bottom: 4px;
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "roboto";
   font-size: 16px;
   font-weight: 400;
   -webkit-border-radius: 4px;
