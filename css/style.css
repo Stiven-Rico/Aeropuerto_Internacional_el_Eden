@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'roboto';
-  src: url("../Fonts/roboto/*");
-  src: url("../Fonts/roboto/*") format("embedded-opentype"), url("../Fonts/roboto/*") format("truetype"), url("../Fonts/roboto/*") format("woff"), url("../Fonts/roboto/*") format("svg");
+  src: url("../Fonts/Roboto-Italic.ttf");
+  src: url("../Fonts/Roboto-Italic.ttf") format("embedded-opentype"), url("../Fonts/Roboto-Italic.ttf") format("truetype"), url("../Fonts/Roboto-Italic.ttf") format("woff"), url("../Fonts/Roboto-Italic.ttf") format("svg");
   font-weight: normal;
   font-style: normal;
 }
