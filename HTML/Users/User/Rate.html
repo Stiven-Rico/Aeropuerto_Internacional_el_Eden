@@ -64,7 +64,7 @@
 							<a href="#">Nosotros</a>
 							<ul class="dropdown">
 								<li><a href="#" <acronym title="Esta característica aún no se ha implementado">Reseña del Aeropueto</acronym></a></li>
-								<li><a href="#" <acronym title="Esta característica aún no se ha implementado">Mapa del aeropuerto</acronym></a></li>
+								<li><a href="#" <acronym title="Esta característica aún no se ha implementado">Mapa del Aeropuerto</acronym></a></li>
 								<li><a href="#" <acronym title="Esta característica aún no se ha implementado">Redes Sociales del Aeropuerto</acronym></a>
 								<li><a href="#" <acronym title="Esta característica aún no se ha implementado">Políticas</acronym></a></li>
 							</ul>
@@ -89,7 +89,7 @@
 				<div class="col-md-12 col-md-offset-0 text-center">
 					<div class="row row-mt-15em">
 						<div class="col-md-12 mt-text animate-box" data-animate-effect="fadeInUp">
-							<h1>Hola, *Inserte Nombre del Usuario Mediante JavaScript*</h1>
+							<h1>Hola, *Inserte Nombre del Usuario Mediante JavaScript y SQL*</h1>
 						</div>
 					</div>
 				</div>
@@ -105,7 +105,7 @@
 			</div>
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="#" class="fh5co-card-item page-inner">
+					<a href="#"  id="Rate_Staff_a" onclick="Option()" class="fh5co-card-item page-inner">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
 							<img src="../../../Images/Staff.png" class="img-responsive">
@@ -113,12 +113,12 @@
 						<div class="fh5co-text">
 							<center><h2><acronym title="Esta característica aún no se ha implementado">Personal Aéreo</acronym></h2></center>
 							<p>Califica tu experiencia con los pilotos y azafatas</p>
-							<center><span class="btn btn-primary">Calificar</span></center>
+							<center><span onclick="Option()" id="Rate_Staff" class="btn btn-primary">Calificar</span></center>
 						</div>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="#" class="fh5co-card-item page-inner">
+					<a href="#" id="Rate_AirPort_a" onclick="Option()" class="fh5co-card-item page-inner">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
 							<img src="../../../Images/AirPort.jpg" class="img-responsive">
@@ -126,12 +126,12 @@
 						<div class="fh5co-text">
 							<center><h2><acronym title="Esta característica aún no se ha implementado">Aeropuerto</acronym></h2></center>
 							<p>Puntúa tu experiencia dentro de las instalaciones</p>
-							<center><span class="btn btn-primary">Calificar</span></center>
+							<center><span onclick="Option()" id="Rate_AirPort" class="btn btn-primary">Calificar</span></center>
 						</div>
 					</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6">
-					<a href="#" class="fh5co-card-item page-inner">
+					<a href="#" id="Rate_Destination_a" onclick="Option()" class="fh5co-card-item page-inner">
 						<figure>
 							<div class="overlay"><i class="ti-plus"></i></div>
 							<img src="../../../Images/Panamá.jpg" class="img-responsive">
@@ -139,7 +139,7 @@
 						<div class="fh5co-text">
 							<center><h2><acronym title="Esta característica aún no se ha implementado">Destino</acronym></h2></center>
 							<p>Describe tu experiencia en tu lugar de destino</p>
-							<center><span class="btn btn-primary">Calificar</span></center>
+							<center><span onclick="Option()" id="Rate_Destination" class="btn btn-primary">Calificar</span></center>
 						</div>
 					</a>
 				</div>
@@ -150,7 +150,7 @@
 		<div class="gtco-container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center gtco-heading">
-					<h2>Calificación</h2>
+					<h2 id="Calificator" name="Calificator">Calificación</h2>
 					<acronym title="Esta característica aún no se ha implementado"><a href="#"><center><img class="img-responsive" src="../../../Images/Rate.png"></a></center></acronym>
 				</div>
 			</div>
@@ -185,7 +185,23 @@
 		<a href="#"><img class="img-responsive" src="../../../Icon/Arrow.png"></a>
 	</div>
 	<script>
-		
+	function Option(){
+		var text="";
+		var Staff=$("#Rate_Staff").val();
+		var AirPort=$("#Rate_AirPort").val();
+		var Destination=$("#Rate_Destination").val();
+		if (Staff){
+			Staff.style.backgroundColor='#F85E34';
+			text="Calificación sobre el personal";
+		} else if (AirPort){
+			AirPort.style.backgroundColor='#F85E34';
+			text='<h2>Calificacion sobre el aeropuerto</h2>';
+		}else if (AirPort){
+			AirPort.style.backgroundColor='#F85E34';
+			text='<h2>Calificación sobre tu destino</h2>';
+		}
+		$("#Calificator").html(text);
+	}
 	</script>
 	<!-- jQuery -->
 	<script src="../../../js/jquery.min.js"></script>
