@@ -229,7 +229,8 @@ h1, h2, h3, h4, h5, h6, figure {
 .gtco-nav ul li.active > a {
   color: #fff !important;
 }
-
+/*Header*/
+/*Fondo Header paraa imagenes*/
 #gtco-header {
   background: #4d4d4d;
 }
@@ -254,6 +255,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-top: 7em;
   margin-bottom: 3em;
 }
+
 @media screen and (max-width: 768px) {
   #gtco-header .mt-text {
     margin-top: 0;
@@ -293,7 +295,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 /*Borde de tab-content*/
 #gtco-header .form-wrap {
-  border-top: 10px solid #148F95;
+  border-top: 10px solid #F85E34;
   position: relative;
   width: 100%;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
@@ -353,7 +355,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #gtco-header .form-wrap .tab-content .tab-content-inner.active {
   display: block;
 }
-
+/*Header*/
 #gtco-header,
 #gtco-counter,
 .gtco-bg {
@@ -1282,11 +1284,11 @@ form label {
   box-shadow: none !important;
   outline: none !important;
 }
-
+/*Botón de Entrar tab-content*/
 .btn-primary {
   background: #F85E34;
   color: #fff;
-  border: 2px solid #148F95 !important;
+  border: 2px solid #F85E34 !important;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #F08D4C !important;
