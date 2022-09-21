@@ -291,6 +291,7 @@ h1, h2, h3, h4, h5, h6, figure {
   line-height: 1.5;
   margin-bottom: 30px;
 }
+/*Borde de tab-content*/
 #gtco-header .form-wrap {
   border-top: 10px solid #148F95;
   position: relative;
